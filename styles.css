@@ -68,8 +68,6 @@ body {
     transform: scale(1.2);
 }
 
-
-
 .redes ul {
     list-style: none;
     height: 50px;
@@ -87,7 +85,6 @@ body {
     transition: all 0.5s ease;
 }
 
-
 .redes ul li .fa {
     color: #D8E2DC;
     transition: all 0.5s ease;
@@ -104,7 +101,6 @@ body {
     transition: all 0.5s ease;
 }
 
-/*twitter*/
 .redes ul li:hover.twitter {
     transition: all 0.5s ease;
 }
@@ -116,7 +112,6 @@ body {
     transition: all 0.5s ease;
 }
 
-/*github*/
 .redes ul li:hover.github {
     transition: all 0.5s ease;
 }
@@ -127,7 +122,6 @@ body {
     transition: all 0.5s ease;
 }
 
-/* instagram */
 .redes ul li:hover.instagram {
     transition: all 0.5s ease;
 }
@@ -138,7 +132,6 @@ body {
     transition: all 0.5s ease;
 }
 
-/* google */
 .redes ul li:hover.google {
     transition: all 0.5s ease;
 }
@@ -149,7 +142,6 @@ body {
     transition: all 0.5s ease;
 }
 
-/* whatsapp */
 .redes ul li:hover.whatsapp {
     transition: all 0.5s ease;
 }
@@ -157,6 +149,16 @@ body {
 .redes ul li:hover .fa-whatsapp {
     color: #4dc247;
     text-shadow: 0 0 15px #4dc247;
+    transition: all 0.5s ease;
+}
+
+.redes ul li:hover.linkedin{
+    transition: all 0.5s ease;
+}
+
+.redes ul li:hover .fa-linkedin{
+    color: blue;
+    text-shadow: 0 0 15px blue;
     transition: all 0.5s ease;
 }
 
