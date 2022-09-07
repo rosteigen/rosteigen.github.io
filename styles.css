@@ -1,0 +1,426 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+}
+
+.page {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+}
+
+.page div {
+    display: flex;
+
+}
+
+.navegacion {
+    width: 100%;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0);
+    position: fixed;
+    z-index: 1;
+    justify-content: center;
+    
+}
+
+.navegacion a {
+    color: #f2f2f2;
+    text-decoration: none;
+    
+}
+
+.navegacion ul {
+    align-self:center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+}
+
+.navegacion ul li{
+    display: inline-block;
+    font-size: 15px;
+    margin: 0px 50px 0px 50px;
+    
+}
+
+.navegacion ul li:hover{
+    transition: all 0.8s ease-in-out;
+    transform: scale(1.2);
+}
+
+.navegacion a:hover {
+    transition: all 0.8s ease-in-out;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    transform: scale(1.2);
+}
+
+
+
+.redes ul {
+    list-style: none;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+.redes ul li {
+    margin-right: 10px;
+    height: 50px;
+    width: 35px;
+    line-height: 50px;
+    cursor: pointer;
+    float: left;
+    transition: all 0.5s ease;
+}
+
+
+.redes ul li .fa {
+    color: #D8E2DC;
+    transition: all 0.5s ease;
+    vertical-align: middle;
+}
+
+.redes ul li:hover.facebook {
+    transition: all 0.5s ease;
+}
+
+.redes ul li:hover .fa-facebook {
+    color: #3b5998;
+    text-shadow: 0 0 15px #3b5998;
+    transition: all 0.5s ease;
+}
+
+/*twitter*/
+.redes ul li:hover.twitter {
+    transition: all 0.5s ease;
+}
+
+
+.redes ul li:hover .fa-twitter {
+    color: #00aced;
+    text-shadow: 0 0 15px #00aced;
+    transition: all 0.5s ease;
+}
+
+/*github*/
+.redes ul li:hover.github {
+    transition: all 0.5s ease;
+}
+
+.redes ul li:hover .fa-github {
+    color: #5e0283;
+    text-shadow: 0 0 15px #5e0283;
+    transition: all 0.5s ease;
+}
+
+/* instagram */
+.redes ul li:hover.instagram {
+    transition: all 0.5s ease;
+}
+
+.redes ul li:hover .fa-instagram {
+    color: #bc2a8d;
+    text-shadow: 0 0 15px #bc2a8d;
+    transition: all 0.5s ease;
+}
+
+/* google */
+.redes ul li:hover.google {
+    transition: all 0.5s ease;
+}
+
+.redes ul li:hover .fa-google {
+    color: #dd4b39;
+    text-shadow: 0 0 15px #dd4b39;
+    transition: all 0.5s ease;
+}
+
+/* whatsapp */
+.redes ul li:hover.whatsapp {
+    transition: all 0.5s ease;
+}
+
+.redes ul li:hover .fa-whatsapp {
+    color: #4dc247;
+    text-shadow: 0 0 15px #4dc247;
+    transition: all 0.5s ease;
+}
+
+.cuerpo {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    justify-content: space-between;
+}
+
+.banner {
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    position: relative;
+}
+
+.perfil {
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.nombre-banner {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#nombre {
+    font-size: 55px;
+    color: white;
+
+}
+
+.redes {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.foto-banner {
+    width: 100%;
+    height: 100%;
+}
+
+.AcercaDe {
+    
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 800px;
+    align-self: center;
+}
+
+.cuadro {
+    height: 800px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    justify-content: space-evenly;
+}
+
+.acerca-right {
+    flex-direction: column;
+    justify-content: center;
+    width: 700px;
+    align-items: center;
+}
+
+.acerca-left {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.foto {}
+
+.foto-circulo {
+    height: 500px;
+}
+
+.titulo,
+.titulo p {
+    color: black;
+    font-size: 50px;
+    font-family: Verdana;
+}
+
+.info {
+    color: black;
+    font-family: Verdana;
+    text-align: center;
+    font-size: 20px;
+}
+
+.division {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    background-color: rgb(0, 0, 0);
+    width: 50%;
+}
+
+hr {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+.experiencia {
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    align-self: center;
+    background-color: rgb(255, 255, 255);
+}
+
+.titulo-exp {
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+    justify-content: center;
+}
+
+.titulo-exp1,
+.titulo-exp2,
+.titulo-exp3 {
+    font-size: 25px;
+}
+
+.exp1,
+.exp2,
+.exp3 {
+    justify-content: space-evenly;
+    margin-top: 50px;
+    color: rgb(0, 0, 0);
+}
+
+.logo-fiverr {
+    height: 200px;
+    width: 200px;
+}
+
+.info-exp1,
+.info-exp2,
+.info-exp3 {
+    width: 500px;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.educacion {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    align-self: center;
+    background-color: rgb(255, 255, 255);
+}
+
+.titulo-edu {
+    font-size: 50px;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+}
+
+.titulo-edu1,
+.titulo-edu2,
+.titulo-edu3 {
+    font-size: 25px;
+}
+
+.edu1,
+.edu2,
+.edu3 {
+    justify-content: space-evenly;
+    margin-top: 50px;
+    color: rgb(0, 0, 0);
+}
+
+.info-edu1,
+.info-edu2,
+.info-edu3 {
+    width: 500px;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.skills {
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 100%;
+}
+
+.titulo-skills {
+    font-size: 50px;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+}
+
+.imgs-skills {
+    flex-direction: column;
+
+}
+
+.imgs-skills1 {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    justify-content: space-evenly
+}
+
+.imgs-skills2 {
+    justify-content: space-evenly;
+}
+
+.idiomas {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+
+.idioma1 {
+    margin-top: 50px;
+    color: rgb(0, 0, 0);
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo-idioma1 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.texto-idioma1 {
+    font-size: 15px;
+}
+
+.idioma2 {
+    margin-top: 50px;
+    color: rgb(0, 0, 0);
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo-idioma2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.texto-idioma2 {
+    font-size: 15px;
+    flex-direction: column;
+    align-items: center;
+}
