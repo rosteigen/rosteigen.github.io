@@ -445,7 +445,8 @@ hr {
 .proyecto1{
     width: 500px;
     height: 500px;
-    background-color: black;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
 }
 
 .proyecto2{
@@ -464,4 +465,12 @@ hr {
     width: 500px;
     height: 500px;
     background-color: purple;
+}
+
+#caca{
+    height: 351px;
+}
+
+#caca:hover{
+    content: url("https://raw.githubusercontent.com/rosteigen/rosteigen.github.io/main/Imgs/gif%20rfv.gif");
 }
