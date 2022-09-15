@@ -10,14 +10,15 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <title>Mi Portfolio</title>
+    <script type="text/javaScript" src="myScript.js"></script>
 </head>
 
-<body class="body">
+<body class="body" onscroll="whenScroll()">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
         crossorigin="anonymous"></script> <!-- bootstrap js-->
     <div id="inicio" class="page">
-        <div class="navegacion">
+        <div id="barra" class="navegacion">
             <ul>
                 <li><a href="#inicio">INICIO</a>
                 </li>
@@ -43,19 +44,26 @@
                 </div>
                 <div class="redes">
                     <ul>
-                        <li class="facebook"><a href="https://www.facebook.com/rodrigo.devincenzi/" target="_blank"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
+                        <li class="facebook"><a href="https://www.facebook.com/rodrigo.devincenzi/" target="_blank"><i
+                                    class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
                         </li>
-                        <li class="github"><a href="https://github.com/rosteigen" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+                        <li class="github"><a href="https://github.com/rosteigen" target="_blank"><i
+                                    class="fa fa-github fa-2x" aria-hidden="true"></i></a>
                         </li>
-                        <li class="twitter"><a href="https://twitter.com/rosteigen" target="_blank"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+                        <li class="twitter"><a href="https://twitter.com/rosteigen" target="_blank"><i
+                                    class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
                         </li>
-                        <li class="instagram"><a href="https://www.instagram.com/rodridevincenzi/" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+                        <li class="instagram"><a href="https://www.instagram.com/rodridevincenzi/" target="_blank"><i
+                                    class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
                         </li>
-                        <li class="google"><a href="mailto:rodrigoagustindevincenzi@gmail.com" target="_blank"><i class="fa fa-google fa-2x" aria-hidden="true"></i></a>
+                        <li class="google"><a href="mailto:rodrigoagustindevincenzi@gmail.com" target="_blank"><i
+                                    class="fa fa-google fa-2x" aria-hidden="true"></i></a>
                         </li>
-                        <li class="whatsapp"><a href="https://wa.me/+5491157032926?" target="_blank"><i class="fa fa-whatsapp fa-2x" aria-hidden="true"></i></a>
+                        <li class="whatsapp"><a href="https://wa.me/+5491157032926?" target="_blank"><i
+                                    class="fa fa-whatsapp fa-2x" aria-hidden="true"></i></a>
                         </li>
-                        <li class="linkedin"><a href="https://www.linkedin.com/in/devincenzirodrigo/" target="_blank"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
+                        <li class="linkedin"><a href="https://www.linkedin.com/in/devincenzirodrigo/" target="_blank"><i
+                                    class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -87,9 +95,6 @@
                 </div>
 
 
-            </div>
-            <div class="division">
-                <hr>
             </div>
 
 
@@ -147,9 +152,6 @@
 
 
             </div>
-            <div class="division">
-                <hr>
-            </div>
             <div id="educacion" class="educacion">
 
                 <div class="titulo-edu">
@@ -202,9 +204,6 @@
                     </div>
                 </div>
             </div>
-            <div class="division">
-                <hr>
-            </div>
             <div id="skills" class="skills">
                 <div class="titulo-skills">
                     <p>Hard & Soft Skills</p>
@@ -253,36 +252,40 @@
                     </div>
                 </div>
             </div>
-            <div class="division">
-                <hr>
-            </div>
             <div id="proyectos" class="proyectos">
                 <div class="titulo-proyectos">
                     <p>Proyectos</p>
                 </div>
                 <div class="parte1">
                     <div class="proyecto1">
-                        <a><video id="snake" muted onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;">
-                            <source src="Imgs/snakevid.mp4" type="video/mp4"></source>
-                            </video></a>
+                        <video id="snake" muted onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;">
+                            <source src="Imgs/snakevid.mp4" type="video/mp4">
+                            </source>
+                        </video>
+                        <div class="titulo-proyecto1"><a>SNAKE GAME</a></div>
+
+
                     </div>
                     <div class="proyecto2">
                         <video id="snake" muted onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;">
-                            <source src="Imgs/snakevid.mp4" type="video/mp4"></source>
-                            </video>
+                            <source src="Imgs/snakevid.mp4" type="video/mp4">
+                            </source>
+                        </video>
 
                     </div>
                 </div>
                 <div class="parte2">
                     <div class="proyecto3">
                         <video id="snake" muted onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;">
-                            <source src="Imgs/snakevid.mp4" type="video/mp4"></source>
-                            </video>
+                            <source src="Imgs/snakevid.mp4" type="video/mp4">
+                            </source>
+                        </video>
                     </div>
                     <div class="proyecto4">
                         <video id="snake" muted onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;">
-                            <source src="Imgs/snakevid.mp4" type="video/mp4"></source>
-                            </video>
+                            <source src="Imgs/snakevid.mp4" type="video/mp4">
+                            </source>
+                        </video>
                     </div>
                 </div>
 
