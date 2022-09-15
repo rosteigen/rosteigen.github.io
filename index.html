@@ -10,13 +10,23 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <title>Mi Portfolio</title>
-    <script type="text/javaScript" src="myScript.js"></script>
+
 </head>
 
 <body class="body" onscroll="whenScroll()">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"
+    integrity="sha512-Mf/xUqfWvDIr+1B6zfnIDIiG7XHzyP/guXUWgV6PgaQoIFeXkJQR5XWh9fqAiCiRCpemabt3naV4jhDWVnuYDQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
-        crossorigin="anonymous"></script> <!-- bootstrap js-->
+        crossorigin="anonymous"></script>
+    
+    <script src="myScript.js"></script>
+
+
+
+
     <div id="inicio" class="page">
         <div id="barra" class="navegacion">
             <ul>
@@ -36,7 +46,7 @@
         </div>
         <div id="cuerpo" class="cuerpo">
             <div class="banner">
-                <div class="perfil"> <img class="foto-banner"
+                <div class="perfil"> <img id="foto-banner" class="foto-banner"
                         src="https://raw.githubusercontent.com/rosteigen/PortfolioFrontEnd/master/Imgs/pexels-pavel-danilyuk-5496464.jpg" />
                 </div>
                 <div class="nombre-banner">
