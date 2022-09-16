@@ -9,5 +9,3 @@ function whenScroll() {
         document.getElementById("barra").style.background = "none";
     }
 }
-
-gsap.fromTo(document.getElementById("foto-banner"),1, {innerHeight: "0%"}, {innerHeight: "100%"});
