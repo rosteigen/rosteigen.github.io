@@ -209,8 +209,9 @@ body {
     align-items: center;
     justify-content: center;
     margin-top: 70px;
-    animation-name: slide-left;
+    animation-name: slider;
     animation-duration: 2s;
+    
 }
 
 .foto-banner {
@@ -507,4 +508,10 @@ body {
 @keyframes slide-right{
     from {right: 400px;}
     to {right: 0;}
+}
+
+@keyframes slider{
+from {transform: translateX(100%);}
+to {transform: translateX(0);}
+   
 }
