@@ -2,12 +2,28 @@
 
 
 function whenScroll() {
-    if (document.body.onscroll > document.body.scrollHeight) {
-        document.getElementById("barra").style.background = "black";
+
+    var titulos = document.getElementsByClassName("titulos");
+    if (document.documentElement.scrollTop >= 500) {
+        
+        document.getElementById("barra").style.animation = "asd";
+        document.getElementById("barra").style.animationDuration = "1s";
+        document.getElementById("barra").style.animationFillMode = "forwards"
+        for(var i = 0; i < titulos.length; i++){
+            titulos[i].style.color = "black";
+        }
+        
+            
     }
     else {
-        document.getElementById("barra").style.background = "none";
+        document.getElementById("barra").style.animation = "none";
+
+            for(var i = 0; i < titulos.length; i++){
+                titulos[i].style.color = "white";
+        }
     }
 
 
 }
+
+
