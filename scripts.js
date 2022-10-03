@@ -23,16 +23,12 @@ function whenScroll() {
                 titulos[i].style.color = "white";
         }
     }
-
-    if (document.documentElement.scrollTop >= 900) {
-        
-        document.getElementById("titulo-exp").style.animation = "slide-left";
-        document.getElementById("titulo-exp").style.animationDuration = "1s";
-        
-            
-    }
-
-
 }
 
+function translateWhenScroll(){
 
+    if (document.documentElement.scrollTop >= 100){
+        
+        
+    }
+}
