@@ -25,10 +25,16 @@ function whenScroll() {
     }
 }
 
+
+
+
 function translateWhenScroll(){
 
-    if (document.documentElement.scrollTop >= 100){
-        
-        
-    }
+    window.addEventListener('scroll', () => {
+        if (document.documentElement.scrollTop >= 100){
+            document.getElementById("nombre").style.transform = "translateY(20px)";
+        }
+      })
+
+
 }

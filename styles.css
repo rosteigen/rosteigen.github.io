@@ -183,14 +183,16 @@ div {
     z-index: 6;
     position: relative;
     margin-top: 100vh;
+
 }
 
 .cuadro {
     width: 100%;
     height: 100vh;
-    background: rgb(255, 255, 255);
+    background: linear-gradient(180deg, rgba(56, 56, 56, 0) 0%, rgba(255, 255, 255, 1) 100%);
     justify-content: space-evenly;
     background-size: cover;
+
 }
 
 .acerca-right {
@@ -201,7 +203,7 @@ div {
 }
 
 .acerca-right div p {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 
 .acerca-left {
@@ -212,8 +214,9 @@ div {
 
 .foto-circulo {
     height: 600px;
-    border: 2px solid rgb(180, 178, 178);
+    border: 8px solid rgb(255, 255, 255);
     filter: grayscale(100%);
+    transform: rotate(-4deg);
 }
 
 .foto-circulo:hover {
@@ -302,19 +305,40 @@ div {
     margin-top: 50px;
 }
 
-.imgs-skills {
-    flex-direction: column;
+.container-skills {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    z-index: 7;
+    justify-content: center;
+}
+
+.circulo {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    z-index: 7;
+    justify-content: center;
 
 }
 
-.imgs-skills1 {
-    margin-top: 50px;
-    margin-bottom: 100px;
-    justify-content: space-evenly
+.hard-skills:hover{
+    height: 300px;
+    width: 600px;
+    border-radius: 450px 450px 0 0;
 }
 
-.imgs-skills2 {
-    justify-content: space-evenly;
+.hard-skills{
+    background-color: blue;
+    height: 300px;
+    width: 600px;
+}
+
+.soft-skills{
+
+
 }
 
 .idiomas {
@@ -480,6 +504,11 @@ div {
 }
 
 @keyframes colorUp {
-    from {filter: grayscale(100%);}
-    to {filter: grayscale(0%); }
+    from {
+        filter: grayscale(100%);
+    }
+
+    to {
+        filter: grayscale(0%);
+    }
 }
