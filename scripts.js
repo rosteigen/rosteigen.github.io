@@ -28,13 +28,15 @@ function whenScroll() {
 
 
 
-function translateWhenScroll(){
+/*function translateWhenScroll(){
 
     window.addEventListener('scroll', () => {
-        if (document.documentElement.scrollTop >= 100){
-            document.getElementById("nombre").style.transform = "translateY(20px)";
-        }
-      })
+            const scrolled = window.scrollY;
+
+            if(scrolled >= 50){
+                document.getElementById("nombre").style.transform = "translateY(-20px)";
+            }        
+      });
 
 
-}
+}*/
