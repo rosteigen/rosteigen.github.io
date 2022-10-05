@@ -1,5 +1,29 @@
+function openLeftBrain(){
+    
+    document.getElementById("img-left-brain").classList.add("open-left");
+    document.getElementById("img-left-brain").style.filter = "grayscale(0%)";
 
+}
 
+function openRightBrain(){
+    
+    document.getElementById("img-right-brain").classList.add("open-right");
+    document.getElementById("img-right-brain").style.filter = "grayscale(0%)";
+
+}
+
+function colorUpFoto(){
+    if (document.documentElement.scrollTop >= 350) {
+        
+        document.getElementById("foto-circulo").style.animation = "rotarColorFoto";
+        document.getElementById("foto-circulo").style.animationDuration = "1s";
+        document.getElementById("foto-circulo").style.animationTimingFunction = "linear";
+        document.getElementById("foto-circulo").style.animationFillMode = "forwards";
+        
+            
+    }
+
+}
 
 function whenScroll() {
 
