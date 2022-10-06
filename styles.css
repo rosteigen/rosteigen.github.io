@@ -461,71 +461,42 @@ div {
 
 
 @keyframes expand {
-    from {
-        transform: scale(0);
-    }
-
-    to {
-        transform: scale(1);
-    }
+    from {transform: scale(0);}
+    to {transform: scale(1)}
 }
 
 @keyframes slide-down {
-    from {
-        top: -100px;
-    }
-
-    to {
-        top: 0;
-    }
+    from {top: -100px;}
+    to {top: 0;}
 }
 
 @keyframes slide-left {
-    from {
-        transform: translateX(-40%);
-    }
-
-    to {
-        transform: translateX(0);
+    from {transform: translateX(-40%);}
+    to {transform: translateX(0);
     }
 }
 
 @keyframes slide-right {
-    from {
-        transform: translateX(40%);
-    }
-
-    to {
-        transform: translateX(0);
-    }
+    from {transform: translateX(40%);}
+    to {transform: translateX(0);}
 }
 
 @keyframes asd {
-    from {
-        background-color: none;
-    }
-
-    to {
-        background-color: rgb(255, 255, 255);
-    }
+    from {background-color: none;}
+    to {background-color: rgb(255, 255, 255);}
 }
 
 @keyframes colorUp {
-    from {
-        filter: grayscale(100%);
-    }
-
-    to {
-        filter: grayscale(0%);
-    }
+    from {filter: grayscale(100%);}
+    to {filter: grayscale(0%);}
 }
 
 @keyframes translate-left{
     from {translate: 0px;}
-    to {translate: -400px;}
+    to {translate: -150%;}
 }
 
 @keyframes translate-right{
     from {translate: 0px;}
-    to {translate: 400px;}
+    to {translate: 150%;}
 }
