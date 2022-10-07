@@ -1,7 +1,11 @@
+
+
+
 function openLeftBrain(){
     
-    document.getElementById("img-left-brain").classList.add("open-left");
+    //document.getElementById("img-left-brain").classList.add("open-left");
     document.getElementById("img-left-brain").style.filter = "grayscale(0%)";
+    document.getElementById("img-left-brain").style.transform = "translate(-250px) 1s linear";
 
 }
 
