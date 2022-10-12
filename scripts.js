@@ -12,7 +12,7 @@ function openCloseBrain(element) {
             }
             else {
                 document.getElementById(element).style.animation = "goback-left 1s";
-                document.getElementById(element).style.filter = "grayscale(100%)";                
+                document.getElementById(element).style.filter = "grayscale(100%)";         
             }
             contadorLeft += 1; 
             break;
@@ -67,17 +67,25 @@ function whenScroll() {
     }
 }
 
-
-
-
 function translateWhenScroll(){
 
-    window.addEventListener('scroll', () => {
-            const scrolled = window.scrollY;
+    const moverNombre = new KeyframeEffect(
+        document.getElementById("nombre"), 
+        [   { transform: 'translateY(0)'},
+            {transform: 'translateY(-550%)'}
+        ],
+        { duration: 800, fill: 'forwards', iterations: 1 }
+    );
+    
+    const animacion = new Animation(moverNombre, document.timeline);
 
-            if(scrolled >= 50){
-                document.getElementById("nombre").style.transform = "translateY(-20px)";
-            }        
+    window.addEventListener('scroll', () => {
+
+            if(window.scrollY >= 400 && window.scrollY <= 500){
+                animacion.play();
+            }
+            
+
       });
 
 
