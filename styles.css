@@ -150,6 +150,10 @@ div {
     animation-duration: 1s;
 }
 
+#img-banner{
+    height: 90%;
+    align-self: center;
+}
 .nombre-banner {
     width: 100%;
     height: 100%;
