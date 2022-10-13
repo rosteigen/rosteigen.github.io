@@ -48,7 +48,7 @@ function colorUpFoto() {
 function whenScroll() {
 
     var titulos = document.getElementsByClassName("titulos");
-    if (document.documentElement.scrollTop >= 350) {
+    if (document.documentElement.scrollTop >= 750) {
 
         document.getElementById("barra").style.boxShadow = "0 1px 25px #888888";
         document.getElementById("barra").style.animation = "asd 1s forwards";
@@ -67,7 +67,7 @@ function whenScroll() {
     }
 }
 
-function translateWhenScroll(){
+/*function translateWhenScroll(){
 
     const moverNombre = new KeyframeEffect(
         document.getElementById("nombre"), 
@@ -89,4 +89,4 @@ function translateWhenScroll(){
       });
 
 
-}
+}*/
