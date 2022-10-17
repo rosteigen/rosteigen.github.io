@@ -24,12 +24,13 @@ div {
 .navegacion {
     width: 100%;
     height: 50px;
-    background-color: rgba(255, 255, 255, 0);
+    background-color: rgba(255, 255, 255, 0.007);
     position: fixed;
     z-index: 7;
     justify-content: center;
     animation-name: slide-down;
     animation-duration: 2s;
+    backdrop-filter: blur(10px);
 }
 
 .navegacion a {
@@ -54,15 +55,16 @@ div {
 }
 
 .navegacion ul li:hover {
-    transition: all 0.8s ease-in-out;
+    transition: all 0.5s ease-in-out;
     transform: scale(1.2);
 }
 
 .navegacion a:hover {
-    transition: all 0.8s ease-in-out;
-    border-bottom-width: 1px;
+    
+    border-bottom-width: 2px;
     border-bottom-style: solid;
-    transform: scale(1.2);
+    border-color: #c41903;
+    
 }
 
 .redes ul {
@@ -166,10 +168,20 @@ div {
     overflow: auto;
 }
 
-#nombre {
-    font-size: 55px;
-    color: white;
+#first, #second {
+    font-size: 80px;
+    color: #ac0000;
+    font-weight: 600;
+    font-family: 'Advent Pro';
 }
+
+
+#nombre, #nombre2 {
+    font-size: 80px;
+    color: white;
+    font-family: 'Advent Pro';
+}
+
 
 .redes {
     width: 100%;
@@ -188,15 +200,15 @@ div {
     height: 50px;
     position: absolute;
     left: 50%;
-    z-index: 99;
+    z-index: 6;
     margin-top: -50px;
 }
 .linea2{
-    border-left: 2px solid rgb(255, 255, 255);
+    border-left: 2px solid #ac0000;
     height: 50px;
     position: absolute;
     left: 50%;
-    z-index: 99;
+    z-index: 6;
 }
 
 .AcercaDe {
@@ -213,8 +225,7 @@ div {
 .cuadro {
     width: 100%;
     height: 100vh;
-    justify-content: space-between;
-    
+    justify-content: space-evenly;
 }
 
 .acerca-right {
@@ -224,20 +235,27 @@ div {
     align-items: center;
 }
 
-.acerca-right div p {
-    color: rgb(0, 0, 0);
+#presentacion{
+    font-family: 'Advent Pro';
+    color: #ac0000;
+}
+
+#texto-presentacion{
+    font-family: 'Advent Pro';
+    color: rgb(255, 255, 255);
 }
 
 .acerca-left {
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: center;
 }
 
 .foto-circulo {
     height: 500px;
     filter: grayscale(100%);
-    background-color: gray;
+    background: radial-gradient(circle, rgba(56,56,56,1) 26%, rgba(31,30,30,1) 84%);
+
+    
 }
 
 .foto-circulo:hover {
@@ -245,24 +263,68 @@ div {
     animation-duration: 1s;
     animation-fill-mode: forwards;
     transition: transform 1s ease-in-out;
-    transform: scale(1.02);
+    transform: scale(1.1);
 }
 
-
-
-
-.titulo,
 .titulo p {
-    color: black;
     font-size: 50px;
-    font-family: Verdana;
 }
 
 .info {
-    color: black;
-    font-family: Verdana;
     text-align: center;
     font-size: 20px;
+}
+
+.skills {
+    flex-direction: column;
+    background-image: url("https://raw.githubusercontent.com/rosteigen/rosteigen.github.io/main/Imgs/fondoNoise.png");
+    width: 100%;
+    height: 100vh;
+    z-index: 6;
+    position: relative;
+}
+
+.titulo-skills {
+    font-size: 50px;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    margin-top: 10px;
+}
+
+#titulo-skills, #titulo-skills2{
+    font-family: 'Advent Pro';
+    color: rgb(255, 255, 255);
+}
+
+#and{
+    font-family: 'Advent Pro';
+    color: #ac0000;
+}
+
+.container-skills {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url("https://raw.githubusercontent.com/rosteigen/rosteigen.github.io/main/Imgs/fondoNoise.png");
+    z-index: 7;
+    justify-content: center;
+}
+
+.left-brain {
+
+}
+
+.right-brain {
+
+}
+
+#img-left-brain, #img-right-brain{
+    height: 600px;
+    filter: grayscale(100%);
+}
+
+#img-left-brain:hover, #img-right-brain:hover{
+    filter: grayscale(0%);
 }
 
 .logo-fiverr {
@@ -311,47 +373,7 @@ div {
     align-items: center;
 }
 
-.skills {
-    flex-direction: column;
-    background-image: url("https://raw.githubusercontent.com/rosteigen/rosteigen.github.io/main/Imgs/fondoNoise.png");
-    width: 100%;
-    height: 100vh;
-    z-index: 6;
-    position: relative;
-}
 
-.titulo-skills {
-    font-size: 50px;
-    justify-content: center;
-    color: rgb(0, 0, 0);
-    margin-top: 50px;
-}
-
-.container-skills {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    background-image: url("https://raw.githubusercontent.com/rosteigen/rosteigen.github.io/main/Imgs/fondoNoise.png");
-    z-index: 7;
-    justify-content: center;
-}
-
-.left-brain {
-
-}
-
-.right-brain {
-
-}
-
-#img-left-brain, #img-right-brain{
-    height: 600px;
-    filter: grayscale(100%);
-}
-
-#img-left-brain:hover, #img-right-brain:hover{
-    filter: grayscale(0%);
-}
 
 .idiomas {
     width: 100%;

@@ -45,7 +45,7 @@ function colorUpFoto() {
 
 }
 
-function whenScroll() {
+/*function whenScroll() {
 
     var titulos = document.getElementsByClassName("titulos");
     if (document.documentElement.scrollTop >= 750) {
@@ -65,7 +65,7 @@ function whenScroll() {
             titulos[i].style.color = "white";
         }
     }
-}
+}*/
 
 /*function translateWhenScroll(){
 
