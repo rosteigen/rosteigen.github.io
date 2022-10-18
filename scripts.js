@@ -9,27 +9,44 @@ function openCloseBrain(element) {
             if (contadorLeft % 2 == 0) {
                 document.getElementById(element).style.animation = "translate-left 1s forwards";
                 document.getElementById(element).style.filter = "grayscale(0%)";
+                document.getElementById(element).onmouseover  = function(){}        
+                document.getElementById(element).onmouseout  = function(){}        
             }
             else {
                 document.getElementById(element).style.animation = "goback-left 1s";
-                document.getElementById(element).style.filter = "grayscale(100%)";         
+                document.getElementById(element).style.filter = "grayscale(100%)";
+                document.getElementById(element).onmouseover  = function(){
+                    document.getElementById(element).style.filter = "grayscale(0%)";
+                }
+                document.getElementById(element).onmouseout  = function(){
+                    document.getElementById(element).style.filter = "grayscale(100%)";
+                }        
             }
+            
             contadorLeft += 1; 
             break;
 
-            case 'img-right-brain':
+        case 'img-right-brain':
             if (contadorRight % 2 == 0) {
-                document.getElementById(element).style.animation = "translate-right 1s";
-                document.getElementById(element).style.animationFillMode = "forwards";
+                document.getElementById(element).style.animation = "translate-right 1s forwards";
                 document.getElementById(element).style.filter = "grayscale(0%)";
+                document.getElementById(element).onmouseover  = function(){}        
+                document.getElementById(element).onmouseout  = function(){}
             }
             else {
                 document.getElementById(element).style.animation = "goback-right 1s";
                 document.getElementById(element).style.filter = "grayscale(100%)";
+                document.getElementById(element).onmouseover  = function(){
+                    document.getElementById(element).style.filter = "grayscale(0%)";
+                }
+                document.getElementById(element).onmouseout  = function(){
+                    document.getElementById(element).style.filter = "grayscale(100%)";
+                }        
             }
             contadorRight += 1; 
             break;
     }
+    
 }
 
 function colorUpFoto() {

@@ -308,6 +308,7 @@ div {
     background-image: url("https://raw.githubusercontent.com/rosteigen/rosteigen.github.io/main/Imgs/fondoNoise.png");
     z-index: 7;
     justify-content: center;
+    align-items: center;
 }
 
 .left-brain {
@@ -319,12 +320,27 @@ div {
 }
 
 #img-left-brain, #img-right-brain{
-    height: 600px;
+    height: 500px;
     filter: grayscale(100%);
 }
 
 #img-left-brain:hover, #img-right-brain:hover{
     filter: grayscale(0%);
+}
+
+.logos-left{
+    width: 100px;
+    height: 500px;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+}
+
+#html,#css,#javascript,#java,#csharp{
+    margin-right: 550px;
+    position: absolute;
+    height: 100px;
+    z-index: 99;
 }
 
 .logo-fiverr {
@@ -377,16 +393,15 @@ div {
 
 .idiomas {
     width: 100%;
-    background: white;
+    background-image: url("https://raw.githubusercontent.com/rosteigen/rosteigen.github.io/main/Imgs/fondoNoise.png");
     justify-content: space-evenly;
     margin-top: 30px;
     z-index: 6;
-    position: relative;
 }
 
 .idioma1 {
     margin-top: 50px;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     justify-content: space-evenly;
     flex-direction: column;
     align-items: center;
@@ -403,7 +418,7 @@ div {
 
 .idioma2 {
     margin-top: 50px;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     justify-content: space-evenly;
     flex-direction: column;
     align-items: center;
@@ -426,12 +441,10 @@ div {
     align-items: center;
     background-image: url("https://raw.githubusercontent.com/rosteigen/rosteigen.github.io/main/Imgs/fondoNoise.png");
     z-index: 6;
-    position: relative;
 }
 
 .titulo-proyectos {
     font-size: 50px;
-    margin: auto;
     margin-top: 50px;
     margin-bottom: 50px;
     color: white;
