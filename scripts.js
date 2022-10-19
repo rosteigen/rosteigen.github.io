@@ -9,6 +9,7 @@ function openCloseBrain(element) {
             if (contadorLeft % 2 == 0) {
                 document.getElementById(element).style.animation = "translate-left 1s forwards";
                 document.getElementById(element).style.filter = "grayscale(0%)";
+                esparcirElementos();
                 document.getElementById(element).onmouseover  = function(){}        
                 document.getElementById(element).onmouseout  = function(){}        
             }
@@ -49,61 +50,60 @@ function openCloseBrain(element) {
     
 }
 
+function esparcirElementos(){
+
+    let html = document.getElementById("html");
+    let css = document.getElementById("css");
+    let javascript = document.getElementById("javascript");
+    let java = document.getElementById("java");
+    let csharp = document.getElementById("csharp");
+
+    const elemento = [html,css,javascript,java,csharp];
+
+    elemento.forEach(element => { 
+        element.style.animation = "open-"+element.id+" 1s 1s forwards";
+        setTimeout(()=> {
+        
+            element.style.visibility = "visible";
+        }, 1150);
+        
+    })
+}
+
 function colorUpFoto() {
+
+    let foto = document.getElementById("foto-circulo");
+
     if (document.documentElement.scrollTop >= 350) {
 
-        document.getElementById("foto-circulo").style.animation = "rotarColorFoto";
-        document.getElementById("foto-circulo").style.animationDuration = "1s";
-        document.getElementById("foto-circulo").style.animationTimingFunction = "linear";
-        document.getElementById("foto-circulo").style.animationFillMode = "forwards";
-
-
+        foto.style.animation = "rotarColorFoto 1s forwards";
+        foto.style.animationTimingFunction = "linear";
     }
 
 }
 
-/*function whenScroll() {
 
-    var titulos = document.getElementsByClassName("titulos");
-    if (document.documentElement.scrollTop >= 750) {
 
-        document.getElementById("barra").style.boxShadow = "0 1px 25px #888888";
-        document.getElementById("barra").style.animation = "asd 1s forwards";
-        for (var i = 0; i < titulos.length; i++) {
-            titulos[i].style.color = "black";
-        }
 
+$(window).scroll(function() {
+    $('.cuadro').each(function() {
+  
+      var _win     = $(window),
+          _ths     = $(this),
+          _pos    = _ths.offset().top,
+          _scroll = _win.scrollTop(),
+          _height = _win.height();
+
+    if(_scroll > _pos - _height){
+        _ths.addClass('anim');
+        _ths.removeClass('desanim');
 
     }
-    else {
-        document.getElementById("barra").style.animation = "none";
-        document.getElementById("barra").style.boxShadow = "none";
-        for (var i = 0; i < titulos.length; i++) {
-            titulos[i].style.color = "white";
-        }
-    }
-}*/
-
-/*function translateWhenScroll(){
-
-    const moverNombre = new KeyframeEffect(
-        document.getElementById("nombre"), 
-        [   { transform: 'translateY(0)'},
-            {transform: 'translateY(-550%)'}
-        ],
-        { duration: 800, fill: 'forwards', iterations: 1 }
-    );
-    
-    const animacion = new Animation(moverNombre, document.timeline);
-
-    window.addEventListener('scroll', () => {
-
-            if(window.scrollY >= 400 && window.scrollY <= 500){
-                animacion.play();
-            }
-            
-
-      });
-
-
-}*/
+    if(!(_scroll > _pos - _height * .3)){
+        _ths.removeClass('anim');
+        _ths.addClass('desanim');
+    }  
+      
+  
+    });
+  });

@@ -226,7 +226,17 @@ div {
     width: 100%;
     height: 100vh;
     justify-content: space-evenly;
+    opacity: 0;
 }
+
+.cuadro.anim{
+    animation: opacar 1s ease-in-out 0s forwards;
+}
+
+.cuadro.desanim{
+    animation: desopacar 1s ease-in-out 0s forwards;
+}
+
 
 .acerca-right {
     flex-direction: column;
@@ -341,6 +351,7 @@ div {
     position: absolute;
     height: 100px;
     z-index: 99;
+    visibility: hidden;
 }
 
 .logo-fiverr {
@@ -550,4 +561,35 @@ div {
 @keyframes goback-right{
     from {translate: 150%;}
     to {translate: 0px;}
+}
+
+@keyframes open-html{
+    from {transform: translate(100px)}
+    to {transform: translate(350px, -270px);}
+}
+@keyframes open-css{
+    from {transform: translate(100px)}
+    to {transform: translate(350px, -150px);}
+}
+@keyframes open-javascript{
+    from {transform: translate(100px)}
+    to {transform: translate(350px, -30px);}
+}
+@keyframes open-java{
+    from {transform: translate(100px)}
+    to {transform: translate(350px, 90px);}
+}
+@keyframes open-csharp{
+    from {transform: translate(100px)}
+    to {transform: translate(350px, 210px);}
+}
+
+@keyframes opacar{
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes desopacar{
+    from {opacity: 1;}
+    to {opacity: 0;}
 }
