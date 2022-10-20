@@ -1,4 +1,4 @@
-let contadorLeft = 0;
+/*let contadorLeft = 0;
 let contadorRight = 0;
 
 function openCloseBrain(element) {
@@ -48,6 +48,15 @@ function openCloseBrain(element) {
             break;
     }
     
+}*/
+
+function openCloseNewBrain(){
+    let whiteBrain = document.getElementById("container-skills"),
+    redBrain = document.getElementById("red-brain");
+
+    whiteBrain.style.animation = "orbitar 2s forwards";
+
+
 }
 
 function esparcirElementos(){
