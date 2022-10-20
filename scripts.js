@@ -93,13 +93,16 @@ $(window).scroll(function() {
           _pos    = _ths.offset().top,
           _scroll = _win.scrollTop(),
           _height = _win.height();
+          flag = 0;
+
+          
 
     if(_scroll > _pos - _height){
         _ths.addClass('anim');
         _ths.removeClass('desanim');
-
+        flag = 1;
     }
-    if(!(_scroll > _pos - _height * .3)){
+    if(!(_scroll > _pos - _height * .3)&& flag > 0){
         _ths.removeClass('anim');
         _ths.addClass('desanim');
     }  
