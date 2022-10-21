@@ -298,7 +298,7 @@ div {
     font-size: 50px;
     justify-content: center;
     color: rgb(0, 0, 0);
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 #titulo-skills, #titulo-skills2{
@@ -321,12 +321,12 @@ div {
 }
 
 #top-brain {
-    margin-top: 50px;
+    
     
 }
 
 #bottom-brain {
-    margin-top: -80px
+    
     
     
 }
