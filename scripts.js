@@ -54,7 +54,7 @@ function openCloseNewBrain(){
     let whiteBrain = document.getElementById("container-skills"),
     redBrain = document.getElementById("red-brain");
 
-    whiteBrain.style.animation = "orbitar 2s forwards";
+    whiteBrain.style.animation = "orbitar 2s";
 
 
 }
