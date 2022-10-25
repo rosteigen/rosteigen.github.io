@@ -1,5 +1,6 @@
 let contadorLeft = 0;
 let contadorRight = 0;
+let flag = 0;
 
 function openCloseBrain(element) {
 
@@ -36,22 +37,13 @@ function openCloseBrain(element) {
     
 }
 
-/*function openCloseNewBrain(){
-    let whiteBrain = document.getElementById("container-skills"),
-    redBrain = document.getElementById("red-brain");
-
-    whiteBrain.style.animation = "orbitar 2s";
-
-
-}*/
-
 function esparcirElementos(){
 
-    let html = document.getElementById("html");
-    let css = document.getElementById("css");
-    let javascript = document.getElementById("javascript");
-    let java = document.getElementById("java");
-    let csharp = document.getElementById("csharp");
+    let html = document.getElementById("html"),
+    css = document.getElementById("css"),
+    javascript = document.getElementById("javascript"),
+    java = document.getElementById("java"),
+    csharp = document.getElementById("csharp");
 
     const elemento = [html,css,javascript,java,csharp];
 
@@ -65,39 +57,41 @@ function esparcirElementos(){
     })
 }
 
-function colorUpFoto() {
-
-    let foto = document.getElementById("foto-circulo");
-
-    if (document.documentElement.scrollTop >= 350) {
-
-        foto.style.animation = "rotarColorFoto 1s forwards";
-        foto.style.animationTimingFunction = "linear";
-    }
-
-}
-
-
-
-
 $(window).scroll(function() {
     $('.cuadro').each(function() {
   
       var _win     = $(window),
           _ths     = $(this),
-          _pos    = _ths.offset().top,
-          _scroll = _win.scrollTop(),
-          _height = _win.height();
-          flag = 0;
+          _scroll = _win.scrollTop()
 
-          
-
-    if(_scroll > _pos - _height){
+    if(_scroll > 400){
         _ths.addClass('anim');
         _ths.removeClass('desanim');
         flag = 1;
     }
-    if(!(_scroll > _pos - _height * .3)&& flag > 0){
+    else if(flag > 0){
+        _ths.removeClass('anim');
+        _ths.addClass('desanim');
+    }  
+      
+  
+    });
+  });
+
+
+  $(window).scroll(function() {
+    $('.container-skills').each(function() {
+  
+      var _win     = $(window),
+          _ths     = $(this),
+          _scroll = _win.scrollTop()
+
+    if(_scroll > 1300){
+        _ths.addClass('anim');
+        _ths.removeClass('desanim');
+        flag = 1;
+    }
+    else if(flag > 0){
         _ths.removeClass('anim');
         _ths.addClass('desanim');
     }  

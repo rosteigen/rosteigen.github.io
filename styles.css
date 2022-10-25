@@ -148,12 +148,11 @@ div {
     width: 100%;
     min-height: 100%;
     flex-direction: column;
-    background-color: rgb(0, 0, 0);
-    justify-content: space-between;
+    justify-content: space-around;
+    background-image: url("https://raw.githubusercontent.com/rosteigen/rosteigen.github.io/main/Imgs/fondoNoise.png");
 }
 
 .banner {
-    background-color: rgb(0, 0, 0);
     min-height: 100vh;
     width: 100%;
     justify-content: center;
@@ -356,26 +355,36 @@ div {
 
 .container-skills {
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     align-items: center;
     background-image: url("https://raw.githubusercontent.com/rosteigen/rosteigen.github.io/main/Imgs/fondoNoise.png");
+    opacity: 0;
 }
 
+
+.container-skills.anim{
+    animation: opacar 1s ease-in-out 0s forwards;
+}
+
+.container-skills.desanim{
+    animation: desopacar 1s ease-in-out 0s forwards;
+}
+
+
 #top-brain {
-    
-    
+    width: 100%;
+    justify-content: center;
 }
 
 #bottom-brain {
-    
-    
-    
+    width: 100%;
+    justify-content: center;
 }
 
 #img-white-brain, #img-red-brain{
-    height: 300px;
+    height: 250px;
     filter: drop-shadow();
     cursor: pointer;
     z-index: 99;
@@ -402,6 +411,31 @@ div {
     height: 100px;
     z-index: 99;
     visibility: hidden;
+}
+
+.logos-right{
+    width: 500px;
+    height: 500px;
+    position: absolute;
+}
+
+.line1{
+    width: 200px;
+    height: 1px;
+    background: white;
+    transform: rotate(45deg);
+    position: absolute;
+    right: -50%;
+    top: -15%;
+}
+.line2{
+    width: 150px;
+    height: 1px;
+    background: white;
+    transform: rotate(75deg);
+    position: absolute;
+    right: -70%;
+    top: -18%;
 }
 
 
@@ -445,21 +479,21 @@ div {
 
 @keyframes translate-left{
     from {translate: 0px;}
-    to {translate: -150%;}
+    to {translate: -220%;}
 }
 
 @keyframes translate-right{
     from {translate: 0px;}
-    to {translate: 150%;}
+    to {translate: 220%;}
 }
 
 @keyframes goback-left{
-    from {translate: -150%;}
+    from {translate: -220%;}
     to {translate: 0px;}
 }
 
 @keyframes goback-right{
-    from {translate: 150%;}
+    from {translate: 220%;}
     to {translate: 0px;}
 }
 
@@ -492,9 +526,4 @@ div {
 @keyframes desopacar{
     from {opacity: 1;}
     to {opacity: 0;}
-}
-
-@keyframes orbitar {
-    from { transform: rotate(0deg)  ; }
-    to   { transform: rotate(2160deg)  ; }
 }
