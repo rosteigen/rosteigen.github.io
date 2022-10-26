@@ -383,12 +383,20 @@ div {
     justify-content: center;
 }
 
-#img-white-brain, #img-red-brain{
+#img-white-brain{
     height: 250px;
     filter: drop-shadow();
     cursor: pointer;
     z-index: 99;
     
+}
+
+#img-red-brain{
+    
+    height: 250px;
+    filter: drop-shadow();
+    cursor: pointer;
+    z-index: 99;
 }
 
 #img-white-brain:hover, #img-red-brain:hover{    
@@ -435,6 +443,16 @@ div {
     transform: rotate(75deg);
     position: absolute;
     right: -70%;
+    top: -18%;
+}
+
+.line3{
+    width: 150px;
+    height: 1px;
+    background: white;
+    transform: rotate(75deg);
+    position: absolute;
+    right: -20%;
     top: -18%;
 }
 
