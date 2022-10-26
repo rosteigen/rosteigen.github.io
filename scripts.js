@@ -59,6 +59,23 @@ function esparcirElementos(){
         }, 1150);
         
     })
+
+    let line1 = document.getElementById("line1-whitebrain"),
+    line2 = document.getElementById("line2-whitebrain"),
+    line3 = document.getElementById("line3-whitebrain"),
+    line4 = document.getElementById("line4-whitebrain"),
+    line5 = document.getElementById("line5-whitebrain");
+
+    const lineas = [line1,line2,line3,line4,line5];
+
+    lineas.forEach(linea => { 
+        setTimeout(()=> {
+        
+            linea.style.animation = "line-fadein 1s forwards";
+            linea.style.visibility = "visible";
+        }, 800);
+        
+    })
 }
 
 function esparcirSkills(){
@@ -71,13 +88,13 @@ function esparcirSkills(){
     line4 = document.getElementById("line4-redbrain"),
     line5 = document.getElementById("line5-redbrain");
 
-    const elemento = [line1,line2,line3,line4,line5];
+    const lineas = [line1,line2,line3,line4,line5];
 
-    elemento.forEach(element => { 
+    lineas.forEach(linea => { 
         setTimeout(()=> {
         
-            element.style.animation = "line-fadein 1s forwards";
-            element.style.visibility = "visible";
+            linea.style.animation = "line-fadein 1s forwards";
+            linea.style.visibility = "visible";
         }, 800);
         
     })
@@ -93,11 +110,11 @@ function removeSkills(){
     line4 = document.getElementById("line4-redbrain"),
     line5 = document.getElementById("line5-redbrain");
 
-    const elemento = [line1,line2,line3,line4,line5];
+    const lineas = [line1,line2,line3,line4,line5];
 
-    elemento.forEach(element => { 
+    lineas.forEach(linea => { 
 
-        element.style.animation = "line-fadeout 1s forwards";
+        linea.style.animation = "line-fadeout 1s forwards";
     })
 
 }

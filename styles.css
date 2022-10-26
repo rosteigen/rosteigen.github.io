@@ -428,7 +428,7 @@ div {
 }
 
 .line1-redbrain,.line2-redbrain,.line3-redbrain,.line4-redbrain,.line5-redbrain{
-    width: 350px;
+    width: 450px;
     height: 1px;
     position: absolute;
     border-color: white;
@@ -460,8 +460,8 @@ div {
 
 .line4-redbrain{
     height: 20px;
-    right: 0;
-    top: 29%;
+    right: -3%;
+    top: 30%;
     border-style: dashed none none none;
 }
 
@@ -473,31 +473,31 @@ div {
 }
 
 .line1-whitebrain,.line2-whitebrain,.line3-whitebrain,.line4-whitebrain,.line5-whitebrain{
-    width: 350px;
+    width: 450px;
     height: 2px;
     position: absolute;
     border-color: #ac0000;
     border-width: 1px;
-    visibility: visible;
+    visibility: hidden;
 }
 
 .line1-whitebrain{
     height: 20px;
-    right: 160%;
+    left: -410%;
     top: -7%;
     border-style: dashed none none dashed;
 }
 
 .line2-whitebrain{
     height: 20px;
-    right: -4%;
+    left: -275%;
     top: 5%;
     border-style: dashed none none none;
 }
 
 .line3-whitebrain{
     height: 20px;
-    right: -1%;
+    left: -260%;
     top: 18%;
     border-style: dashed none none none;
 
@@ -505,14 +505,14 @@ div {
 
 .line4-whitebrain{
     height: 20px;
-    right: 0;
-    top: 29%;
+    left: -273%;
+    top: 30%;
     border-style: dashed none none none;
 }
 
 .line5-whitebrain{
     height: 20px;
-    right: 160%;
+    left: -410%;
     top: 38%;
     border-style: none none dashed dashed;
 }
@@ -606,10 +606,10 @@ div {
 
 @keyframes line-fadein {
     from {width: 0;}
-    to {width: 350px; opacity: 1;}
+    to {width: 450px; opacity: 1;}
 }
 
 @keyframes line-fadeout {
-    from {width: 350px;}
+    from {width: 450px;}
     to {width: 0; opacity: 0;}
 }
