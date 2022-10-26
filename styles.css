@@ -354,13 +354,12 @@ div {
 }
 
 .container-skills {
-    flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     width: 100%;
     height: 100%;
     align-items: center;
     background-image: url("https://raw.githubusercontent.com/rosteigen/rosteigen.github.io/main/Imgs/fondoNoise.png");
-    opacity: 0;
+    opacity: 1;
 }
 
 
@@ -373,14 +372,14 @@ div {
 }
 
 
-#top-brain {
-    width: 100%;
-    justify-content: center;
+#left-brain {
+    
+    
 }
 
-#bottom-brain {
-    width: 100%;
-    justify-content: center;
+#right-brain {
+    
+    
 }
 
 #img-white-brain{
@@ -397,6 +396,7 @@ div {
     filter: drop-shadow();
     cursor: pointer;
     z-index: 99;
+    
 }
 
 #img-white-brain:hover, #img-red-brain:hover{    
@@ -427,37 +427,95 @@ div {
     position: absolute;
 }
 
-.line1{
-    width: 200px;
+.line1-redbrain,.line2-redbrain,.line3-redbrain,.line4-redbrain,.line5-redbrain{
+    width: 350px;
     height: 1px;
-    background: white;
-    transform: rotate(45deg);
     position: absolute;
-    right: -50%;
-    top: -15%;
-}
-.line2{
-    width: 150px;
-    height: 1px;
-    background: white;
-    transform: rotate(75deg);
-    position: absolute;
-    right: -70%;
-    top: -18%;
+    border-color: white;
+    border-width: 1px;
+    visibility: hidden;
 }
 
-.line3{
-    width: 150px;
-    height: 1px;
-    background: white;
-    transform: rotate(75deg);
-    position: absolute;
-    right: -20%;
-    top: -18%;
+.line1-redbrain{
+    height: 20px;
+    right: -30%;
+    top: -7%;
+    border-style: dashed dashed none none;
 }
 
 
+.line2-redbrain{
+    height: 20px;
+    right: -4%;
+    top: 5%;
+    border-style: dashed none none none;
+}
 
+.line3-redbrain{
+    height: 20px;
+    right: -1%;
+    top: 18%;
+    border-style: dashed none none none;
+}
+
+.line4-redbrain{
+    height: 20px;
+    right: 0;
+    top: 29%;
+    border-style: dashed none none none;
+}
+
+.line5-redbrain{
+    height: 20px;
+    right: -30%;
+    top: 38%;
+    border-style: none dashed dashed none;
+}
+
+.line1-whitebrain,.line2-whitebrain,.line3-whitebrain,.line4-whitebrain,.line5-whitebrain{
+    width: 350px;
+    height: 2px;
+    position: absolute;
+    border-color: #ac0000;
+    border-width: 1px;
+    visibility: visible;
+}
+
+.line1-whitebrain{
+    height: 20px;
+    right: 160%;
+    top: -7%;
+    border-style: dashed none none dashed;
+}
+
+.line2-whitebrain{
+    height: 20px;
+    right: -4%;
+    top: 5%;
+    border-style: dashed none none none;
+}
+
+.line3-whitebrain{
+    height: 20px;
+    right: -1%;
+    top: 18%;
+    border-style: dashed none none none;
+
+}
+
+.line4-whitebrain{
+    height: 20px;
+    right: 0;
+    top: 29%;
+    border-style: dashed none none none;
+}
+
+.line5-whitebrain{
+    height: 20px;
+    right: 160%;
+    top: 38%;
+    border-style: none none dashed dashed;
+}
 
 /*
 ////////////////// KEYFRAMES /////////////////////////////////////////////////////////////////
@@ -544,4 +602,14 @@ div {
 @keyframes desopacar{
     from {opacity: 1;}
     to {opacity: 0;}
+}
+
+@keyframes line-fadein {
+    from {width: 0;}
+    to {width: 350px; opacity: 1;}
+}
+
+@keyframes line-fadeout {
+    from {width: 350px;}
+    to {width: 0; opacity: 0;}
 }

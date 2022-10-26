@@ -4,17 +4,19 @@ let flag = 0;
 
 function openCloseBrain(element) {
 
+    let elemento = document.getElementById(element);
+
     switch (element) {
 
         case 'img-white-brain':
             if (contadorLeft % 2 == 0) {
-                document.getElementById(element).style.animation = "translate-left 1s forwards";
-                esparcirElementos();
-                document.getElementById(element).onmouseover  = function(){}        
-                document.getElementById(element).onmouseout  = function(){}        
+                elemento.style.animation = "translate-left 1s forwards";
+                //esparcirElementos();
+                elemento.onmouseover  = function(){}        
+                elemento.onmouseout  = function(){}        
             }
             else {
-                document.getElementById(element).style.animation = "goback-left 1s";
+                elemento.style.animation = "goback-left 1s";
                 
             }
             
@@ -23,13 +25,15 @@ function openCloseBrain(element) {
 
         case 'img-red-brain':
             if (contadorRight % 2 == 0) {
-                document.getElementById(element).style.animation = "translate-right 1s forwards";
-                document.getElementById(element).onmouseover  = function(){}        
-                document.getElementById(element).onmouseout  = function(){}
+                elemento.style.animation = "translate-right 1s forwards";
+                esparcirSkills();
+                elemento.onmouseover  = function(){}        
+                elemento.onmouseout  = function(){}
+                
             }
             else {
-                document.getElementById(element).style.animation = "goback-right 1s";
-                
+                elemento.style.animation = "goback-right 1s";
+                removeSkills();
             }
             contadorRight += 1; 
             break;
@@ -55,6 +59,47 @@ function esparcirElementos(){
         }, 1150);
         
     })
+}
+
+function esparcirSkills(){
+    
+
+    
+    let line1 = document.getElementById("line1-redbrain"),
+    line2 = document.getElementById("line2-redbrain"),
+    line3 = document.getElementById("line3-redbrain"),
+    line4 = document.getElementById("line4-redbrain"),
+    line5 = document.getElementById("line5-redbrain");
+
+    const elemento = [line1,line2,line3,line4,line5];
+
+    elemento.forEach(element => { 
+        setTimeout(()=> {
+        
+            element.style.animation = "line-fadein 1s forwards";
+            element.style.visibility = "visible";
+        }, 800);
+        
+    })
+
+    
+}
+
+function removeSkills(){
+
+    let line1 = document.getElementById("line1-redbrain"),
+    line2 = document.getElementById("line2-redbrain"),
+    line3 = document.getElementById("line3-redbrain"),
+    line4 = document.getElementById("line4-redbrain"),
+    line5 = document.getElementById("line5-redbrain");
+
+    const elemento = [line1,line2,line3,line4,line5];
+
+    elemento.forEach(element => { 
+
+        element.style.animation = "line-fadeout 1s forwards";
+    })
+
 }
 
 $(window).scroll(function() {
