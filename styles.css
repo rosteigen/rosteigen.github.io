@@ -104,43 +104,43 @@ div {
 
 .redes ul li:hover .fa-facebook {
     color: #3b5998;
-    text-shadow: 0 0 15px #3b5998;
+    text-shadow: 0 0 2px #3b5998;
     transition: all 0.5s ease;
 }
 
 .redes ul li:hover .fa-twitter {
     color: #00aced;
-    text-shadow: 0 0 15px #00aced;
+    text-shadow: 0 0 2px #00aced;
     transition: all 0.5s ease;
 }
 
 .redes ul li:hover .fa-github {
     color: #5e0283;
-    text-shadow: 0 0 15px #5e0283;
+    text-shadow: 0 0 2px #5e0283;
     transition: all 0.5s ease;
 }
 
 .redes ul li:hover .fa-instagram {
     color: #bc2a8d;
-    text-shadow: 0 0 15px #bc2a8d;
+    text-shadow: 0 0 2px #bc2a8d;
     transition: all 0.5s ease;
 }
 
 .redes ul li:hover .fa-google {
     color: #dd4b39;
-    text-shadow: 0 0 15px #dd4b39;
+    text-shadow: 0 0 2px #dd4b39;
     transition: all 0.5s ease;
 }
 
 .redes ul li:hover .fa-whatsapp {
     color: #4dc247;
-    text-shadow: 0 0 15px #4dc247;
+    text-shadow: 0 0 2px #4dc247;
     transition: all 0.5s ease;
 }
 
 .redes ul li:hover .fa-linkedin {
-    color: blue;
-    text-shadow: 0 0 15px blue;
+    color: rgb(58, 58, 255);
+    text-shadow: 0 0 2px rgb(58, 58, 253);
     transition: all 0.5s ease;
 }
 
@@ -280,12 +280,13 @@ div {
     flex-direction: column;
     justify-content: center;
     width: 800px;
-    align-items: center;
+    align-items: left;
 }
 
 #presentacion{
     font-family: 'Advent Pro';
     color: #ac0000;
+    
 }
 
 #texto-presentacion{
@@ -319,7 +320,7 @@ div {
 }
 
 .info {
-    text-align: center;
+    text-align: left;
     font-size: 20px;
 }
 

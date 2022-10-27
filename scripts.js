@@ -11,13 +11,13 @@ function openCloseBrain(element) {
         case 'img-white-brain':
             if (contadorLeft % 2 == 0) {
                 elemento.style.animation = "translate-left 1s forwards";
-                //esparcirElementos();
+                esparcirElementos();
                 elemento.onmouseover  = function(){}        
                 elemento.onmouseout  = function(){}        
             }
             else {
                 elemento.style.animation = "goback-left 1s";
-                
+                removeElementos();
             }
             
             contadorLeft += 1; 
@@ -43,7 +43,7 @@ function openCloseBrain(element) {
 
 function esparcirElementos(){
 
-    let html = document.getElementById("html"),
+    /*let html = document.getElementById("html"),
     css = document.getElementById("css"),
     javascript = document.getElementById("javascript"),
     java = document.getElementById("java"),
@@ -58,7 +58,7 @@ function esparcirElementos(){
             element.style.visibility = "visible";
         }, 1150);
         
-    })
+    })*/
 
     let line1 = document.getElementById("line1-whitebrain"),
     line2 = document.getElementById("line2-whitebrain"),
@@ -78,10 +78,22 @@ function esparcirElementos(){
     })
 }
 
-function esparcirSkills(){
-    
+function removeElementos(){
+    let line1 = document.getElementById("line1-whitebrain"),
+    line2 = document.getElementById("line2-whitebrain"),
+    line3 = document.getElementById("line3-whitebrain"),
+    line4 = document.getElementById("line4-whitebrain"),
+    line5 = document.getElementById("line5-whitebrain");
 
-    
+    const lineas = [line1,line2,line3,line4,line5];
+
+    lineas.forEach(linea => { 
+
+        linea.style.animation = "line-fadeout 1s forwards";
+    })
+}
+
+function esparcirSkills(){
     let line1 = document.getElementById("line1-redbrain"),
     line2 = document.getElementById("line2-redbrain"),
     line3 = document.getElementById("line3-redbrain"),
@@ -98,12 +110,9 @@ function esparcirSkills(){
         }, 800);
         
     })
-
-    
 }
 
 function removeSkills(){
-
     let line1 = document.getElementById("line1-redbrain"),
     line2 = document.getElementById("line2-redbrain"),
     line3 = document.getElementById("line3-redbrain"),
@@ -116,7 +125,6 @@ function removeSkills(){
 
         linea.style.animation = "line-fadeout 1s forwards";
     })
-
 }
 
 $(window).scroll(function() {
