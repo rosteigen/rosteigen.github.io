@@ -42,8 +42,8 @@ function openCloseBrain(element) {
 }
 
 function esparcirElementos(){
-
-    /*let html = document.getElementById("html"),
+    
+    let html = document.getElementById("html"),
     css = document.getElementById("css"),
     javascript = document.getElementById("javascript"),
     java = document.getElementById("java"),
@@ -58,7 +58,7 @@ function esparcirElementos(){
             element.style.visibility = "visible";
         }, 1150);
         
-    })*/
+    })
 
     let line1 = document.getElementById("line1-whitebrain"),
     line2 = document.getElementById("line2-whitebrain"),
@@ -73,9 +73,11 @@ function esparcirElementos(){
         
             linea.style.animation = "line-fadein 1s forwards";
             linea.style.visibility = "visible";
+            
         }, 800);
         
     })
+  
 }
 
 function removeElementos(){

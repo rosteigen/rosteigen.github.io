@@ -415,11 +415,30 @@ div {
 }
 
 #html,#css,#javascript,#java,#csharp{
-    margin-right: 550px;
+    font-family: MonoSpace;
+    font-size: 20px;
+    color: white;
     position: absolute;
-    height: 100px;
-    z-index: 99;
-    visibility: hidden;
+}
+
+#javascript{
+    top: -150%;
+}
+
+#html{
+    top: -150%;
+}
+
+#css{
+    top: -150%;
+}
+
+#csharp{
+    top: -150%;
+}
+
+#java{
+    top: -40%;
 }
 
 .logos-right{
@@ -429,7 +448,7 @@ div {
 }
 
 .line1-redbrain,.line2-redbrain,.line3-redbrain,.line4-redbrain,.line5-redbrain{
-    width: 450px;
+    width: 150px;
     height: 1px;
     position: absolute;
     border-color: white;
@@ -439,7 +458,7 @@ div {
 
 .line1-redbrain{
     height: 20px;
-    right: -30%;
+    right: 20%;
     top: -7%;
     border-style: dashed dashed none none;
 }
@@ -447,34 +466,34 @@ div {
 
 .line2-redbrain{
     height: 20px;
-    right: -4%;
+    right: 40%;
     top: 5%;
     border-style: dashed none none none;
 }
 
 .line3-redbrain{
     height: 20px;
-    right: -1%;
+    right: 45%;
     top: 18%;
     border-style: dashed none none none;
 }
 
 .line4-redbrain{
     height: 20px;
-    right: -3%;
+    right: 43%;
     top: 30%;
     border-style: dashed none none none;
 }
 
 .line5-redbrain{
     height: 20px;
-    right: -30%;
+    right: 20%;
     top: 38%;
     border-style: none dashed dashed none;
 }
 
 .line1-whitebrain,.line2-whitebrain,.line3-whitebrain,.line4-whitebrain,.line5-whitebrain{
-    width: 450px;
+    width: 150px;
     height: 2px;
     position: absolute;
     border-color: #ac0000;
@@ -484,21 +503,21 @@ div {
 
 .line1-whitebrain{
     height: 20px;
-    left: -410%;
+    left: -150%;
     top: -7%;
     border-style: dashed none none dashed;
 }
 
 .line2-whitebrain{
     height: 20px;
-    left: -275%;
+    left: -70%;
     top: 5%;
     border-style: dashed none none none;
 }
 
 .line3-whitebrain{
     height: 20px;
-    left: -260%;
+    left: -40%;
     top: 18%;
     border-style: dashed none none none;
 
@@ -506,14 +525,14 @@ div {
 
 .line4-whitebrain{
     height: 20px;
-    left: -273%;
+    left: -40%;
     top: 30%;
     border-style: dashed none none none;
 }
 
 .line5-whitebrain{
     height: 20px;
-    left: -410%;
+    left: -150%;
     top: 38%;
     border-style: none none dashed dashed;
 }
@@ -556,43 +575,43 @@ div {
 
 @keyframes translate-left{
     from {translate: 0px;}
-    to {translate: -220%;}
+    to {translate: -120%;}
 }
 
 @keyframes translate-right{
     from {translate: 0px;}
-    to {translate: 220%;}
+    to {translate: 120%;}
 }
 
 @keyframes goback-left{
-    from {translate: -220%;}
+    from {translate: -120%;}
     to {translate: 0px;}
 }
 
 @keyframes goback-right{
-    from {translate: 220%;}
+    from {translate: 120%;}
     to {translate: 0px;}
 }
 
 @keyframes open-html{
-    from {transform: translate(100px)}
-    to {transform: translate(350px, -270px);}
+    from {left: 0;}
+    to {left: 75%;}
 }
 @keyframes open-css{
-    from {transform: translate(100px)}
-    to {transform: translate(350px, -150px);}
+    from {left: 0;}
+    to {left: 75%;}
 }
 @keyframes open-javascript{
-    from {transform: translate(100px)}
-    to {transform: translate(350px, -30px);}
+    from {left: 0;}
+    to {left: 75%;}
 }
 @keyframes open-java{
-    from {transform: translate(100px)}
-    to {transform: translate(350px, 90px);}
+    from {left: 0;}
+    to {left: 75%;}
 }
 @keyframes open-csharp{
-    from {transform: translate(100px)}
-    to {transform: translate(350px, 210px);}
+    from {left: 0;}
+    to {left: 93%;}
 }
 
 @keyframes opacar{
@@ -607,10 +626,10 @@ div {
 
 @keyframes line-fadein {
     from {width: 0;}
-    to {width: 450px; opacity: 1;}
+    to {width: 150px; opacity: 1;}
 }
 
 @keyframes line-fadeout {
-    from {width: 450px;}
+    from {width: 150px;}
     to {width: 0; opacity: 0;}
 }
