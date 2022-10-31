@@ -337,6 +337,14 @@ div {
     z-index: 6;
 }
 
+#fondo-papel{
+    background: url(https://raw.githubusercontent.com/rosteigen/rosteigen.github.io/main/Imgs/paper.png);
+    position: absolute;
+    width: 614px;
+    height: 475px;
+    background-size: cover;
+    z-index: 99;
+}
 .titulo-skills {
     font-size: 50px;
     justify-content: center;
