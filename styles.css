@@ -331,11 +331,11 @@ div {
 
 .skills {
     flex-direction: column;
-    background: url(https://raw.githubusercontent.com/rosteigen/rosteigen.github.io/main/Imgs/fondo-Papel.png);
+    background: url(https://raw.githubusercontent.com/rosteigen/rosteigen.github.io/main/Imgs/fondoPapel.png);
     width: 100%;
     height: 100vh;
     z-index: 6;
-    background-size: cover;
+    background-size:cover;
 }
 
 .titulo-skills {
