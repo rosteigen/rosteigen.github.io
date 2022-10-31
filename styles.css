@@ -148,7 +148,7 @@ div {
     width: 100%;
     min-height: 100%;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     background-image: url("https://raw.githubusercontent.com/rosteigen/rosteigen.github.io/main/Imgs/fondoNoise.png");
 }
 
@@ -331,24 +331,16 @@ div {
 
 .skills {
     flex-direction: column;
-    background-image: url("https://raw.githubusercontent.com/rosteigen/rosteigen.github.io/main/Imgs/fondoNoise.png");
+    background: url(https://raw.githubusercontent.com/rosteigen/rosteigen.github.io/main/Imgs/fondoPapel.png);
     width: 100%;
     height: 100vh;
     z-index: 6;
+    background-size: cover;
 }
 
-#fondo-papel{
-    background: url(https://raw.githubusercontent.com/rosteigen/rosteigen.github.io/main/Imgs/paper.png);
-    position: absolute;
-    width: 614px;
-    height: 475px;
-    background-size: cover;
-    z-index: 99;
-}
 .titulo-skills {
     font-size: 50px;
     justify-content: center;
-    margin-top: 120px;
     
 }
 
@@ -367,7 +359,6 @@ div {
     width: 100%;
     height: 100%;
     align-items: center;
-    background-image: url("https://raw.githubusercontent.com/rosteigen/rosteigen.github.io/main/Imgs/fondoNoise.png");
     opacity: 1;
 }
 
