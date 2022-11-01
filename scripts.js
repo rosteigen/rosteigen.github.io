@@ -171,3 +171,22 @@ $(window).scroll(function() {
   
     });
   });
+
+  $(window).scroll(function() {
+    $('.items').each(function() {
+  
+      var _win     = $(window),
+          _ths     = $(this),
+          _scroll = _win.scrollTop()
+
+    if(_scroll > 1600 && _scroll < 2500){
+        _ths.css({'color': 'black','font-weight': '600'});
+        flag = 1;
+    }
+    else {
+        _ths.css({'color': 'white','font-weight': '100'});
+    }  
+      
+  
+    });
+  });
