@@ -333,7 +333,7 @@ div {
     flex-direction: column;
     background: url(https://raw.githubusercontent.com/rosteigen/rosteigen.github.io/main/Imgs/paper-background.png);
     width: 100%;
-    height: 1000px;
+    height: 1300px;
     z-index: 6;
     background-size: cover;
 }
@@ -341,7 +341,7 @@ div {
 .titulo-skills {
     font-size: 50px;
     justify-content: center;
-    margin-top: 150px;
+    margin-top: 250px;
 }
 
 #titulo-skills, #titulo-skills2{
@@ -371,9 +371,16 @@ div {
     animation: desopacar 1s ease-in-out 0s forwards;
 }
 
-#tecnologias{
+#tecnologias-container{
     width: 50%;
-    height: 100%;
+    height: 60%;
+    justify-content: space-around;
+    flex-direction: column;
+    margin-top: -250px;
+}
+
+#tecnologias, #tecnologias2{
+    justify-content: space-evenly;
 }
 
 #habilidades{
@@ -381,6 +388,22 @@ div {
     height: 100%;
 }
 
+#html,#css,#javascript,#java,#csharp{
+    width: 200px;
+    height: 250px;
+    background-color: #ffffff;
+    justify-content: center;
+}
+
+#html-logo,#css-logo, #javascript-logo, #java-logo, #csharp-logo{
+    width: 200px;
+    height: 200px;
+}
+
+#html-texto, #css-texto, #javascript-texto, #java-texto, #csharp-texto{
+    align-self:flex-end;
+    position: absolute;
+}
 
 /*
 ////////////////// KEYFRAMES /////////////////////////////////////////////////////////////////
