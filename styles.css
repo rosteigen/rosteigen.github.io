@@ -403,6 +403,8 @@ div {
 #html-texto, #css-texto, #javascript-texto, #java-texto, #csharp-texto{
     align-self:flex-end;
     position: absolute;
+    font-size: 20px;
+    font-family: 'Advent Pro';
 }
 
 /*
