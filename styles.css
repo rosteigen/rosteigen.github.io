@@ -383,14 +383,14 @@ div {
     justify-content: space-evenly;
 }
 
-#html,#css,#javascript,#java,#csharp,#github{
+.tecnos{
     width: 200px;
     height: 220px;
     background-color: #ffffff;
     justify-content: center;
 }
 
-#html-logo,#css-logo, #javascript-logo, #csharp-logo, #github-logo{
+.logos{
     width: 150px;
     height: 150px;
 }
@@ -400,7 +400,7 @@ div {
     height: 180px;
 }
 
-#html-texto, #css-texto, #javascript-texto, #java-texto, #csharp-texto, #github-texto{
+.textos{
     align-self: flex-end;
     position: absolute;
     font-size: 20px;
@@ -413,6 +413,10 @@ div {
     justify-content: space-around;
     flex-direction: column;
     margin-top: -250px;
+}
+
+#habilidades, #habilidades2{
+    justify-content: space-evenly;
 }
 
 /*
