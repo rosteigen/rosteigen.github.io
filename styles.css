@@ -23,7 +23,7 @@ div {
 
 .navegacion {
     width: 100%;
-    height: 50px;
+    height: 6%;
     background-color: rgba(255, 255, 255, 0.007);
     position: fixed;
     z-index: 7;
@@ -81,14 +81,14 @@ div {
 
 .redes ul {
     list-style: none;
-    height: 50px;
+    height: 5%;
     margin: 0;
     padding: 0;
 }
 
 .redes ul li {
     margin-right: 10px;
-    height: 50px;
+    height: 5%;
     width: 35px;
     line-height: 50px;
     cursor: pointer;
@@ -200,7 +200,7 @@ div {
     position: absolute;
     align-items: center;
     justify-content: center;
-    margin-top: 70px;
+    margin-top: 4%;
     animation-name: slide-right;
     animation-duration: 2s;
     z-index: 1;
@@ -390,18 +390,23 @@ div {
 
 #html,#css,#javascript,#java,#csharp{
     width: 200px;
-    height: 250px;
+    height: 220px;
     background-color: #ffffff;
     justify-content: center;
 }
 
-#html-logo,#css-logo, #javascript-logo, #java-logo, #csharp-logo{
-    width: 200px;
-    height: 200px;
+#html-logo,#css-logo, #javascript-logo, #csharp-logo{
+    width: 150px;
+    height: 150px;
+}
+
+#java-logo{
+    width: 97px;
+    height: 180px;
 }
 
 #html-texto, #css-texto, #javascript-texto, #java-texto, #csharp-texto{
-    align-self:flex-end;
+    align-self: flex-end;
     position: absolute;
     font-size: 20px;
     font-family: 'Advent Pro';
