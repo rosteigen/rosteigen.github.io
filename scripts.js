@@ -158,7 +158,7 @@ $(window).scroll(function() {
           _ths     = $(this),
           _scroll = _win.scrollTop()
 
-    if(_scroll > 1300){
+    if(_scroll > 1900){
         _ths.addClass('anim');
         _ths.removeClass('desanim');
         flag = 1;
