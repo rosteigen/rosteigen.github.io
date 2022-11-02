@@ -383,19 +383,14 @@ div {
     justify-content: space-evenly;
 }
 
-#habilidades{
-    width: 50%;
-    height: 100%;
-}
-
-#html,#css,#javascript,#java,#csharp{
+#html,#css,#javascript,#java,#csharp,#github{
     width: 200px;
     height: 220px;
     background-color: #ffffff;
     justify-content: center;
 }
 
-#html-logo,#css-logo, #javascript-logo, #csharp-logo{
+#html-logo,#css-logo, #javascript-logo, #csharp-logo, #github-logo{
     width: 150px;
     height: 150px;
 }
@@ -405,11 +400,19 @@ div {
     height: 180px;
 }
 
-#html-texto, #css-texto, #javascript-texto, #java-texto, #csharp-texto{
+#html-texto, #css-texto, #javascript-texto, #java-texto, #csharp-texto, #github-texto{
     align-self: flex-end;
     position: absolute;
     font-size: 20px;
     font-family: 'Advent Pro';
+}
+
+#habilidades-container{
+    width: 50%;
+    height: 60%;
+    justify-content: space-around;
+    flex-direction: column;
+    margin-top: -250px;
 }
 
 /*
