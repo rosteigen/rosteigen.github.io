@@ -252,6 +252,7 @@ div {
     justify-content: center;
     text-align: center;
     margin-top: 100px;
+    
 }
 
 #titulo-sobremi{
@@ -265,6 +266,13 @@ div {
     justify-content: center;
     font-family: 'Advent Pro';
     color: rgb(255, 255, 255);
+}
+
+#linea-titulo{
+    width: 40%;
+    border: white 2px;
+    border-style: solid none none none;
+    margin: 40px;
 }
 
 .cuadro.anim{
@@ -354,6 +362,13 @@ div {
     color: #ac0000;
 }
 
+#linea-titulo2{
+    width: 40%;
+    border: #ac0000 2px;
+    border-style: solid none none none;
+    margin: 40px;
+}
+
 .container-skills {
     justify-content: center;
     width: 100%;
@@ -434,7 +449,78 @@ div {
 #teamwork-logo{
     height: 150px;
 }
+/*
+////////////////// PROYECTOS /////////////////////////////////////////////////////////////////
+////////////////////////////////////////// PROYECTOS ///////////////////////////////////////////////////
+*/
+.proyectos{
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    justify-content: space-around;
+    background-image: url("https://raw.githubusercontent.com/rosteigen/rosteigen.github.io/main/Imgs/fondoNoise.png");
+    z-index: 6;
+}
 
+.titulo-proyectos {
+    font-size: 50px;
+    color: white;
+    justify-content: center;
+}
+
+.proyecto1{
+    width: 100%;
+    height: 60%;
+    justify-content: center;
+}
+
+#proyecto1-imagen {
+    width: 35%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: -10%;
+}
+
+#proyecto1-cuadro{
+    background-color: white;
+    height: 60%;
+    width: 30%;
+    position: absolute;
+    left: 50%;
+    flex-direction: column;
+}
+
+#snake {
+    width: 100%;
+    height: 100%;
+}
+
+#titulo-proyecto1{
+    justify-content: right;
+}
+
+#title-p1{
+    
+}
+
+#texto-proyecto1{
+    text-align: right;
+}
+
+#txt-p1{
+    
+}
+
+#tecnologias-proyecto1{
+    justify-content: right;
+}
+
+#tecnos-p1{
+    
+
+}
 /*
 ////////////////// KEYFRAMES /////////////////////////////////////////////////////////////////
 ////////////////////////////////////////// KEYFRAMES ///////////////////////////////////////////////////
