@@ -349,7 +349,7 @@ div {
 .titulo-skills {
     font-size: 50px;
     justify-content: center;
-    margin-top: 250px;
+    margin-top: 350px;
 }
 
 #titulo-skills, #titulo-skills2{
@@ -375,6 +375,7 @@ div {
     height: 100%;
     align-items: center;
     opacity: 1;
+    margin-top: 100px;
 }
 
 
@@ -406,16 +407,37 @@ div {
 }
 
 .logos{
-    width: 150px;
-    height: 150px;
+    width: 60%;
+    height: 50%;
 }
 
 #java-logo{
-    width: 97px;
-    height: 180px;
+    width: 85px;
+    height: 140px;
 }
 
-.textos{
+.textos-tecnologias{
+    align-self: flex-end;
+    position: absolute;
+    font-size: 20px;
+    font-family: 'Advent Pro';
+}
+
+.textos-tecnologias2{
+    align-self: flex-end;
+    position: absolute;
+    font-size: 20px;
+    font-family: 'Advent Pro';
+}
+
+.textos-habilidades{
+    align-self: flex-end;
+    position: absolute;
+    font-size: 20px;
+    font-family: 'Advent Pro';
+}
+
+.textos-habilidades2{
     align-self: flex-end;
     position: absolute;
     font-size: 20px;
@@ -434,20 +456,8 @@ div {
     justify-content: space-evenly;
 }
 
-#creatividad-logo{
-    height: 150px;
-}
-
-#comunicacion-logo{
-    height: 150px;
-}
-
-#colaboracion-logo{
-    height: 150px;
-}
-
-#teamwork-logo{
-    height: 150px;
+#creatividad-logo,#comunicacion-logo,#colaboracion-logo,#teamwork-logo{
+    height: 55%;
 }
 /*
 ////////////////// PROYECTOS /////////////////////////////////////////////////////////////////
@@ -466,6 +476,7 @@ div {
     font-size: 50px;
     color: white;
     justify-content: center;
+    font-family: 'Advent Pro';
 }
 
 .proyecto1{
@@ -484,12 +495,12 @@ div {
 }
 
 #proyecto1-cuadro{
-    background-color: white;
     height: 60%;
     width: 30%;
     position: absolute;
     left: 50%;
     flex-direction: column;
+    justify-content: space-evenly;
 }
 
 #snake {
@@ -502,15 +513,23 @@ div {
 }
 
 #title-p1{
-    
+    font-size: 50px;
+    color: white;
+    font-family: 'Advent Pro';
 }
 
 #texto-proyecto1{
     text-align: right;
+    background-image: linear-gradient(rgba(63, 61, 61, 0.11), rgba(63, 61, 61, 0.11)), url("https://raw.githubusercontent.com/rosteigen/rosteigen.github.io/main/Imgs/fondoNoise.png");
+    height: 60%;
 }
 
 #txt-p1{
-    
+    color: rgb(212, 209, 209);
+    margin: 30px 30px 30px 30px;
+    font-family: 'Advent Pro';
+    font-size: 2vh;
+
 }
 
 #tecnologias-proyecto1{
@@ -518,8 +537,9 @@ div {
 }
 
 #tecnos-p1{
-    
-
+    font-size: 25px;
+    color: white;
+    font-family: 'Advent Pro';
 }
 /*
 ////////////////// KEYFRAMES /////////////////////////////////////////////////////////////////
