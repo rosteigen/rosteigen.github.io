@@ -33,6 +33,14 @@ div {
     backdrop-filter: blur(10px);
 }
 
+.navegacion.anim{
+    animation: opacar 1s ease-in-out 0s forwards;
+}
+
+.navegacion.desanim{
+    animation: desopacar 1s ease-in-out 0s forwards;
+}
+
 .numeros{
     color: red;
     font-weight: 800;
@@ -206,24 +214,6 @@ div {
     z-index: 1;
 }
 
-.linea{
-    border-left: 2px solid rgb(255, 255, 255);
-    height: 50px;
-    position: absolute;
-    left: 50%;
-    z-index: 9;
-    margin-top: -50px;
-    top: 0;
-}
-.linea2{
-    border-left: 2px solid #ac0000;
-    height: 50px;
-    position: absolute;
-    left: 50%;
-    z-index: 9;
-    top: 0;
-}
-
 /*
 ////////////////// SOBREMI /////////////////////////////////////////////////////////////////
 ////////////////////////////////////////// SOBREMI ///////////////////////////////////////////////////
@@ -269,7 +259,7 @@ div {
 }
 
 #linea-titulo{
-    width: 40%;
+    width: 20%;
     border: white 2px;
     border-style: solid none none none;
     margin: 40px;
@@ -363,7 +353,7 @@ div {
 }
 
 #linea-titulo2{
-    width: 40%;
+    width: 20%;
     border: #ac0000 2px;
     border-style: solid none none none;
     margin: 40px;
@@ -400,15 +390,15 @@ div {
 }
 
 .tecnos{
-    width: 200px;
-    height: 220px;
+    width: 120px;
+    height: 120px;
     background-color: #ffffff;
     justify-content: center;
 }
 
 .logos{
-    width: 60%;
-    height: 50%;
+    width: 100%;
+    height: 100%;
 }
 
 #java-logo{
@@ -416,32 +406,20 @@ div {
     height: 140px;
 }
 
-.textos-tecnologias{
-    align-self: flex-end;
-    position: absolute;
-    font-size: 20px;
-    font-family: 'Advent Pro';
+#tecnos-texto, #tecnos2-texto{
+    width: 100%;
+    justify-content: space-evenly;
 }
 
-.textos-tecnologias2{
-    align-self: flex-end;
-    position: absolute;
+.textos-tecnologias, .textos-tecnologias2{
     font-size: 20px;
     font-family: 'Advent Pro';
+
 }
 
-.textos-habilidades{
-    align-self: flex-end;
-    position: absolute;
-    font-size: 20px;
-    font-family: 'Advent Pro';
-}
-
-.textos-habilidades2{
-    align-self: flex-end;
-    position: absolute;
-    font-size: 20px;
-    font-family: 'Advent Pro';
+.lenguajes{
+    width: 120px;
+    justify-content: center;
 }
 
 #habilidades-container{
@@ -456,9 +434,21 @@ div {
     justify-content: space-evenly;
 }
 
-#creatividad-logo,#comunicacion-logo,#colaboracion-logo,#teamwork-logo{
-    height: 55%;
+.habilidades{
+    width: 140px;
+    justify-content: center;
 }
+
+.textos-habilidades, .textos-habilidades2{
+    font-size: 20px;
+    font-family: 'Advent Pro';
+    align-self: center;
+}
+
+#habs-textos,#habs2-textos{
+    justify-content: space-evenly;
+}
+
 /*
 ////////////////// PROYECTOS /////////////////////////////////////////////////////////////////
 ////////////////////////////////////////// PROYECTOS ///////////////////////////////////////////////////

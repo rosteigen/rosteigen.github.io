@@ -190,3 +190,47 @@ $(window).scroll(function() {
   
     });
   });
+
+
+  $(window).scroll(function() {
+    $('.cuadro').each(function() {
+  
+      var _win     = $(window),
+          _ths     = $(this),
+          _scroll = _win.scrollTop()
+
+    if(_scroll > 400){
+        _ths.addClass('anim');
+        _ths.removeClass('desanim');
+        flag = 1;
+    }
+    else if(flag > 0){
+        _ths.removeClass('anim');
+        _ths.addClass('desanim');
+    }  
+      
+  
+    });
+  });
+
+  let ultimoScroll = 0;
+  $(window).scroll(function() {
+    $('banner').each(function() {
+
+        let barra = document.getElementById("barra");
+  
+      let currentScroll = $(this).scrollTop();
+
+      if(currentScroll > ultimoScroll){
+        barra.removeClass('desanim');
+            barra.addClass('anim');
+      }
+      else {
+        barra.removeClass('anim');
+        barra.addClass('desanim');
+      }
+
+        ultimoScroll = currentScroll;
+  
+    });
+  });
