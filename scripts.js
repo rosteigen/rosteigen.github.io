@@ -215,7 +215,7 @@ $(window).scroll(function() {
 
   let ultimoScroll = 0;
   $(window).scroll(function() {
-    $('banner').each(function() {
+    $(window).each(function() {
 
         let barra = document.getElementById("barra");
   
@@ -223,7 +223,7 @@ $(window).scroll(function() {
 
       if(currentScroll > ultimoScroll){
         barra.removeClass('desanim');
-            barra.addClass('anim');
+        barra.addClass('anim');
       }
       else {
         barra.removeClass('anim');
