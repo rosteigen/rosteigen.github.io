@@ -286,16 +286,19 @@ div {
 }
 
 .acerca-left {
-    flex-direction: column;
     justify-content: center;
 }
 
 .foto-circulo {
     height: 500px;
     filter: grayscale(100%);
-    background: radial-gradient(circle, rgba(56,56,56,1) 26%, rgba(31,30,30,1) 84%);
+    background: radial-gradient(circle, rgba(56,56,56,1) 26%, rgba(31,30,30,1) 84%);   
+}
 
-    
+.foto-circulo2 {
+    height: 80%;
+    filter: grayscale(100%);   
+    justify-content: center;
 }
 
 .foto-circulo:hover {
