@@ -31,14 +31,7 @@ div {
     animation-name: slide-down;
     animation-duration: 2s;
     backdrop-filter: blur(10px);
-}
-
-.navegacion.anim{
-    animation: opacar 1s ease-in-out 0s forwards;
-}
-
-.navegacion.desanim{
-    animation: desopacar 1s ease-in-out 0s forwards;
+    transition: top 0.3s;
 }
 
 .numeros{
@@ -547,8 +540,7 @@ div {
 
 @keyframes slide-left {
     from {transform: translateX(-40%);}
-    to {transform: translateX(0);
-    }
+    to {transform: translateX(0);}
 }
 
 @keyframes slide-right {
@@ -556,55 +548,9 @@ div {
     to {transform: translateX(0);}
 }
 
-@keyframes asd {
-    from {background-color: none;}
-    to {background-color: rgb(255, 255, 255);}
-}
-
 @keyframes colorUp {
     from {filter: grayscale(100%);}
     to {filter: grayscale(0%);}
-}
-
-@keyframes translate-left{
-    from {translate: 0px;}
-    to {translate: -120%;}
-}
-
-@keyframes translate-right{
-    from {translate: 0px;}
-    to {translate: 120%;}
-}
-
-@keyframes goback-left{
-    from {translate: -120%;}
-    to {translate: 0px;}
-}
-
-@keyframes goback-right{
-    from {translate: 120%;}
-    to {translate: 0px;}
-}
-
-@keyframes open-html{
-    from {left: 0;}
-    to {left: 75%;}
-}
-@keyframes open-css{
-    from {left: 0;}
-    to {left: 75%;}
-}
-@keyframes open-javascript{
-    from {left: 0;}
-    to {left: 75%;}
-}
-@keyframes open-java{
-    from {left: 0;}
-    to {left: 75%;}
-}
-@keyframes open-csharp{
-    from {left: 0;}
-    to {left: 93%;}
 }
 
 @keyframes opacar{
@@ -615,14 +561,4 @@ div {
 @keyframes desopacar{
     from {opacity: 1;}
     to {opacity: 0;}
-}
-
-@keyframes line-fadein {
-    from {width: 0;}
-    to {width: 150px; opacity: 1;}
-}
-
-@keyframes line-fadeout {
-    from {width: 150px;}
-    to {width: 0; opacity: 0;}
 }

@@ -1,6 +1,7 @@
 let contadorLeft = 0;
 let contadorRight = 0;
 let flag = 0;
+let ultimoScroll = 0;
 
 function openCloseBrain(element) {
 
@@ -213,24 +214,21 @@ $(window).scroll(function() {
     });
   });
 
-  let ultimoScroll = 0;
-  $(window).scroll(function() {
-    $(window).each(function() {
-
-        let barra = document.getElementById("barra");
   
-      let currentScroll = $(this).scrollTop();
+  $(window).scroll(function() {
+    $('.navegacion').each(function() {
 
-      if(currentScroll > ultimoScroll){
-        barra.removeClass('desanim');
-        barra.addClass('anim');
+        let barra = $(this);
+        let currentScroll = $(window).scrollTop();
+
+      if(currentScroll < ultimoScroll){
+        barra.css({top:0});
       }
-      else {
-        barra.removeClass('anim');
-        barra.addClass('desanim');
+      if(currentScroll > ultimoScroll){
+        barra.css({top:-50});
       }
 
         ultimoScroll = currentScroll;
-  
+        
     });
   });
