@@ -287,26 +287,14 @@ div {
 
 .acerca-left {
     justify-content: center;
-}
-
-.foto-circulo {
-    height: 500px;
-    filter: grayscale(100%);
-    background: radial-gradient(circle, rgba(56,56,56,1) 26%, rgba(31,30,30,1) 84%);   
+    align-items: center;
 }
 
 .foto-circulo2 {
     height: 80%;
+    width: 80%;
     filter: grayscale(100%);   
     justify-content: center;
-}
-
-.foto-circulo:hover {
-    animation-name: colorUp;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    transition: transform 1s ease-in-out;
-    transform: scale(1.1);
 }
 
 .titulo p {
@@ -549,11 +537,6 @@ div {
 @keyframes slide-right {
     from {transform: translateX(40%);}
     to {transform: translateX(0);}
-}
-
-@keyframes colorUp {
-    from {filter: grayscale(100%);}
-    to {filter: grayscale(0%);}
 }
 
 @keyframes opacar{
