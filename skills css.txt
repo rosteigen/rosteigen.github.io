@@ -1,0 +1,162 @@
+#left-brain {
+    
+    
+}
+
+#right-brain {
+    
+    
+}
+
+#img-white-brain{
+    height: 250px;
+    filter: drop-shadow();
+    cursor: pointer;
+    z-index: 99;
+    margin-top: -150px;
+}
+
+#img-red-brain{
+    height: 250px;
+    filter: drop-shadow();
+    cursor: pointer;
+    z-index: 99;
+    margin-top: -150px;
+}
+
+#img-white-brain:hover, #img-red-brain:hover{    
+    filter: drop-shadow(2px 2px 25px rgb(0, 0, 0));
+    transform: scale(102%);
+    transition: all 1s ease-in-out;
+}
+
+.logos-left{
+    width: 100px;
+    height: 500px;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+}
+
+#html,#css,#javascript,#java,#csharp{
+    font-family: MonoSpace;
+    font-size: 20px;
+    color: white;
+    position: absolute;
+}
+
+#javascript{
+    top: -150%;
+}
+
+#html{
+    top: -150%;
+}
+
+#css{
+    top: -150%;
+}
+
+#csharp{
+    top: -150%;
+}
+
+#java{
+    top: -40%;
+}
+
+.logos-right{
+    width: 500px;
+    height: 500px;
+    position: absolute;
+}
+
+.line1-redbrain,.line2-redbrain,.line3-redbrain,.line4-redbrain,.line5-redbrain{
+    width: 150px;
+    height: 1px;
+    position: absolute;
+    border-color: white;
+    border-width: 1px;
+    visibility: hidden;
+}
+
+.line1-redbrain{
+    height: 20px;
+    right: 20%;
+    top: -7%;
+    border-style: dashed dashed none none;
+}
+
+
+.line2-redbrain{
+    height: 20px;
+    right: 40%;
+    top: 5%;
+    border-style: dashed none none none;
+}
+
+.line3-redbrain{
+    height: 20px;
+    right: 45%;
+    top: 18%;
+    border-style: dashed none none none;
+}
+
+.line4-redbrain{
+    height: 20px;
+    right: 43%;
+    top: 30%;
+    border-style: dashed none none none;
+}
+
+.line5-redbrain{
+    height: 20px;
+    right: 20%;
+    top: 38%;
+    border-style: none dashed dashed none;
+}
+
+.line1-whitebrain,.line2-whitebrain,.line3-whitebrain,.line4-whitebrain,.line5-whitebrain{
+    width: 150px;
+    height: 2px;
+    position: absolute;
+    border-color: #ac0000;
+    border-width: 1px;
+    visibility: hidden;
+}
+
+.line1-whitebrain{
+    height: 20px;
+    left: -150%;
+    top: -7%;
+    border-style: dashed none none dashed;
+}
+
+.line2-whitebrain{
+    height: 20px;
+    left: -70%;
+    top: 5%;
+    border-style: dashed none none none;
+}
+
+.line3-whitebrain{
+    height: 20px;
+    left: -40%;
+    top: 18%;
+    border-style: dashed none none none;
+
+}
+
+.line4-whitebrain{
+    height: 20px;
+    left: -40%;
+    top: 30%;
+    border-style: dashed none none none;
+}
+
+.line5-whitebrain{
+    height: 20px;
+    left: -150%;
+    top: 38%;
+    border-style: none none dashed dashed;
+}

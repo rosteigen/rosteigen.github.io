@@ -1,0 +1,22 @@
+<div id="left-brain">
+                    <img id="img-white-brain" onclick="openCloseBrain('img-white-brain')"
+                        src="https://raw.githubusercontent.com/rosteigen/rosteigen.github.io/main/Imgs/white-brain.png" alt="white-brain">
+                    <div class="logos-left">
+                        <div id="line1-whitebrain" class="line1-whitebrain"><p id="javascript" class="tecnologias">JavaScript</p></div>
+                        <div id="line2-whitebrain" class="line2-whitebrain"><p id="css" class="tecnologias">CSS</p></div>
+                        <div id="line3-whitebrain" class="line3-whitebrain"><p id="html" class="tecnologias">HTML</p></div>
+                        <div id="line4-whitebrain" class="line4-whitebrain"><p id="csharp" class="tecnologias">C#</p></div>
+                        <div id="line5-whitebrain" class="line5-whitebrain"><p id="java" class="tecnologias">Java</p></div>
+                    </div>
+                </div>
+                <div id="right-brain">
+                    <img id="img-red-brain" onclick="openCloseBrain('img-red-brain')"
+                        src="https://raw.githubusercontent.com/rosteigen/rosteigen.github.io/main/Imgs/red-brain.png" alt="red-brain">
+                    <div class="logos-right">
+                        <div id="line1-redbrain" class="line1-redbrain"></div>
+                        <div id="line2-redbrain" class="line2-redbrain"></div>
+                        <div id="line3-redbrain" class="line3-redbrain"></div>
+                        <div id="line4-redbrain" class="line4-redbrain"></div>
+                        <div id="line5-redbrain" class="line5-redbrain"></div>
+                    </div>
+                </div>

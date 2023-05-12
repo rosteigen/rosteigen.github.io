@@ -1,0 +1,118 @@
+<div id="proyectos" class="proyectos">
+            <div class="titulo-proyectos">
+                <p>Proyectos</p>
+            </div>
+            <div class="parte1">
+                <div class="proyecto1">
+                    <video id="snake" muted onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;">
+                        <source src="Imgs/snakevid.mp4" type="video/mp4">
+                        </source>
+                    </video>
+                    <div class="titulo-proyecto1"><a>SNAKE GAME</a></div>
+
+
+                </div>
+                <div class="proyecto2">
+                    <video id="snake" muted onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;">
+                        <source src="Imgs/snakevid.mp4" type="video/mp4">
+                        </source>
+                    </video>
+
+                </div>
+            </div>
+            <div class="parte2">
+                <div class="proyecto3">
+                    <video id="snake" muted onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;">
+                        <source src="Imgs/snakevid.mp4" type="video/mp4">
+                        </source>
+                    </video>
+                </div>
+                <div class="proyecto4">
+                    <video id="snake" muted onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;">
+                        <source src="Imgs/snakevid.mp4" type="video/mp4">
+                        </source>
+                    </video>
+                </div>
+            </div>
+
+
+
+
+        </div>
+        <div id="educacion" class="educacion">
+
+            <div class="titulo-edu">
+                <p>Educación</p>
+            </div>
+            <div class="edu1">
+                <div class="logo-edu1">
+                    <img class="logo-fiverr"
+                        src="https://raw.githubusercontent.com/rosteigen/PortfolioFrontEnd/master/Imgs/logo-fiverr.png">
+                </div>
+                <div class="info-edu1">
+                    <div class="titulo-edu1">
+                        <p>Traductor independiente</p>
+                    </div>
+                    <div class="texto-edu1">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit repellendus ab cum tempore
+                            reprehenderit labore neque numquam quis, libero dolore!</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="edu2">
+                <div class="logo-edu2">
+                    <img class="logo-fiverr"
+                        src="https://raw.githubusercontent.com/rosteigen/PortfolioFrontEnd/master/Imgs/logo-fiverr.png">
+                </div>
+                <div class="info-edu2">
+                    <div class="titulo-edu2">
+                        <p>Traductor independiente</p>
+                    </div>
+                    <div class="texto-edu2">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit repellendus ab cum tempore
+                            reprehenderit labore neque numquam quis, libero dolore!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="edu3">
+                <div class="logo-edu3">
+                    <img class="logo-fiverr"
+                        src="https://raw.githubusercontent.com/rosteigen/PortfolioFrontEnd/master/Imgs/logo-fiverr.png">
+                </div>
+                <div class="info-edu3">
+                    <div class="titulo-edu3">
+                        <p>Traductor independiente</p>
+                    </div>
+                    <div class="texto-edu3">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit repellendus ab cum tempore
+                            reprehenderit labore neque numquam quis, libero dolore!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="idiomas">
+                <div class="idioma1">
+                    <div class="titulo-idioma1">
+                        <p>Español</p>
+                    </div>
+                    <div class="texto-idioma1">
+                        <p>Nativo</p>
+                    </div>
+                </div>
+                <div class="idioma2">
+                    <div class="titulo-idioma2">
+                        <p>Inglés</p>
+                    </div>
+                    <div class="texto-idioma2">
+                        <div>
+                            <p>Avanzado</p>
+                        </div>
+
+                        <div>
+                            <p>Certificado EFSET: <a class="certificado" href="https://www.efset.org/cert/DYJz7u">C2
+                                    Proficient</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
